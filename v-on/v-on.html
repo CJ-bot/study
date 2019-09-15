@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>v-on</title>
+</head>
+<body>
+    <div id="app">
+        <button v-on="{mouseenter:onEnter,mouseleave:onOut}" v-on:click='onClick'>点击</button>
+        <form @keyup.enter='onKeyEnter' @click.enter='onClick' @submit.prevent='onSubmit'>
+                <input type="text">
+                <button type="submit">提交</button>
+        </form>
+    </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/v-on.js"></script>
+</body>
+</html>
