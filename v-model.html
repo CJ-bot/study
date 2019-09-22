@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-model</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model.number='name'>
+        {{name}}<br>
+        <label>生活用品<input v-model="categorize" value="生活用品" type="radio"></label><br>
+        <label>休闲零食<input v-model="categorize" value="休闲零食" type="radio"></label>
+        <br>
+        <br>
+        <label>水蜜桃<input type="checkbox" v-model="fruit" value="水蜜桃"></label>
+        <label>哈密瓜<input type="checkbox" v-model="fruit" value="哈密瓜"></label>
+        <label>猕猴桃<input type="checkbox" v-model="fruit" value="猕猴桃"></label>
+        <br>
+        <br>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="v-model.js"></script>
+</body>
+</html>
